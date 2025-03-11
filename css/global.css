@@ -1,9 +1,12 @@
-:root,[data-bs-theme=dark] {
-    --bs-body-bg: #091221;
-    --bs-primary-bg: #0236a5;
-    --bs-primary-rgb: 2, 54, 165;
-    --bs-secondary-bg: #162647;
-    --bs-secondary-rgb: 22, 38, 71;
+:root {
+    --bs-body-bg: #fff;
+    --bs-primary-bg: #5776b7;
+    --bs-primary-rgb: 87, 118, 183;
+    --bs-secondary-bg: #1c449b;
+    --bs-secondary-rgb: 28, 68, 155;
+    --bs-third-bg: #5dc3c8;
+    --bs-third-rgb: 93, 195, 200;
+
 }
 
 .btn.btn-primary {
@@ -137,6 +140,11 @@ header.header {
 
 .row {
     margin-left: 0;
+}
+
+.daily-header > div {
+    color: #000;
+    background-color: RGBA(var(--bs-third-rgb),var(--bs-bg-opacity,1))!important;
 }
 
 .daily-content .card {
