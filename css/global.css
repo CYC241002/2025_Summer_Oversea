@@ -1,9 +1,9 @@
 :root {
-    --bs-body-bg: #fff;
+    --bs-body-bg: #b5e3e1;
     --bs-primary-bg: #5776b7;
     --bs-primary-rgb: 87, 118, 183;
-    --bs-secondary-bg: #1c449b;
-    --bs-secondary-rgb: 28, 68, 155;
+    --bs-secondary-bg: #0ba29b;
+    --bs-secondary-rgb: 11, 162, 155;
     --bs-third-bg: #5dc3c8;
     --bs-third-rgb: 93, 195, 200;
 
@@ -153,6 +153,45 @@ header.header {
 
 .daily-content .card:hover {
     transform: scale(1.02);
+}
+
+section.area {
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100% auto;
+    background-attachment: fixed;
+}
+
+.sec-1 {
+    background-image: url('../img/01-Japan_Yamanashi/01-Japan_Yamanashi_Background.jpg');
+}
+
+.sec-2 {
+    background-image: url('../img/02-Japan_Shizuoka/02-Japan_Shizuoka_Background.jpg');
+}
+
+.sec-3 {
+    background-image: url('../img/03-Canada_Vancouver/03-Canada_Vancouver_Background.jpg');
+}
+
+.sec-4 {
+    background-image: url('../img/04-Indonesia_Bali/04-Indonesia_Bali_Background.jpg');
+}
+
+.sec-5 {
+    background-image: url('../img/05-Singapore/05-Singapore_Background.jpg');
+}
+
+.sec-6 {
+    background-image: url('../img/06-America_Seattle/06-America_Seattle_Background.jpg');
+}
+
+.sec-7 {
+    background-image: url('../img/07-Australia_Sydney/07-Australia_Sydney_Background.jpg');
+}
+
+.sec-8 {
+    background-image: url('../img/08-Japan_Okinawa/08-Japan_Okinawa_Background.jpg');
 }
 
 /*
