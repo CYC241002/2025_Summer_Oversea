@@ -134,6 +134,22 @@ header.header {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.feature-img {
+    text-align: center;
+}
+
+.feature-img img {
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .feature-img img {
+        max-width: 600px;
+        height: auto;
+    }
+}
+
 .feature {
     margin-top: 1em;
     margin-left: auto;
