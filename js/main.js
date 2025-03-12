@@ -15,6 +15,12 @@
         e.stopPropagation()
     })
 
+    popup.querySelectorAll('a').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.stopPropagation()
+        })
+    })
+
     document.addEventListener('click', function() {
         popup.classList.remove('show')
     })

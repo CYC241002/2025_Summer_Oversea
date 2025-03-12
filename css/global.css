@@ -26,6 +26,12 @@
     --tc-feature-wish-bg: #450640;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 .nav-item > .nav-link:hover, .dropdown-item:hover {
     color: #fff;
     background-color: RGBA(var(--bs-secondary-rgb),var(--bs-bg-opacity,1))!important;
@@ -240,6 +246,10 @@ section.area {
 
 .daily.daily-row:not(:last-child) {
     border-bottom: 1px solid var(--bs-primary-bg);
+}
+
+.page-header {
+    margin-top: 72px;
 }
 
 .accordion-button {
