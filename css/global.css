@@ -6,7 +6,6 @@
     --bs-secondary-rgb: 87, 118, 183;
     --bs-third-bg: #2555a7;
     --bs-third-rgb: 37, 85, 167;
-
 }
 
 .btn.btn-primary {
@@ -251,6 +250,53 @@ section.area {
 
 .accordion-body {
     border: 1px solid var(--bs-primary-bg);
+}
+
+.float-icons .float-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 999;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);;
+    --bs-btn-hover-bg: #5ebfc6;
+}
+
+.float-icons .float-icon:hover {
+    background-color: var(--bs-btn-hover-bg);
+}
+
+.float-icons .float-icon img {
+    width: 48px;
+    height: auto;
+}
+
+.float-icons .popup {
+    position: fixed;
+    bottom: 20px;
+    right: 100px;
+    background-color: #fff;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);;
+}
+
+.float-icons .popup.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.float-icons .popup img {
+    width: 200px;
+    height: auto;
 }
 
 @media (max-width: 767.99px) {
