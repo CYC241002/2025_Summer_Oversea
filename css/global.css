@@ -227,9 +227,13 @@ section.area {
 }
 */
 
-@media (max-width: 767.98px) {
+@media (max-width: 767.99px) {
     .daily-content {
         margin-top: 1em;
+    }
+
+    .daily.daily-row .col-md-6:nth-child(even) {
+        margin-top: 2em;
     }
 }
 
