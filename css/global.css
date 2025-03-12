@@ -227,6 +227,16 @@ section.area {
 }
 */
 
+
+.daily.daily-row {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.daily.daily-row:not(:last-child) {
+    border-bottom: 1px solid var(--bs-primary-bg);
+}
+
 @media (max-width: 767.99px) {
     .daily-content {
         margin-top: 1em;
