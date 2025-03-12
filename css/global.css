@@ -21,6 +21,11 @@
     --tc-feature-wish-bg: #450640;
 }
 
+.nav-link:hover {
+    color: #fff;
+    background-color: RGBA(var(--bs-secondary-rgb),var(--bs-bg-opacity,1))!important;
+}
+
 header.header {
     width: 100%;
     height: 100vh;
@@ -155,6 +160,14 @@ header.header {
     transform: scale(1.02);
 }
 
+.daily-row .img-fluid {
+    transition: .1s;
+}
+
+.daily-row .img-fluid:hover {
+    transform: scale(1.02);
+}
+
 section.area {
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -217,5 +230,11 @@ section.area {
 @media (max-width: 767.98px) {
     .daily-content {
         margin-top: 1em;
+    }
+}
+
+@media (min-width: 768px) {
+    .daily.daily-row:nth-child(odd) {
+        flex-direction: row-reverse;
     }
 }
