@@ -21,7 +21,7 @@
     --tc-feature-wish-bg: #450640;
 }
 
-.nav-link:hover {
+.nav-item > .nav-link:hover, .dropdown-item:hover {
     color: #fff;
     background-color: RGBA(var(--bs-secondary-rgb),var(--bs-bg-opacity,1))!important;
 }
