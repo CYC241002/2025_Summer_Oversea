@@ -354,3 +354,35 @@ section.area > a[name] {
 div.content article > a[name] {
     top: -120px;
 }
+
+/* Q&A 樣式*/
+#qaAccordion {
+    counter-reset: qa-counter;
+}
+
+#qaAccordion div.accordion-item > h2 > button .question {
+    counter-increment: qa-counter;
+    font-weight: bold;
+}
+
+#qaAccordion div.accordion-item > h2 > button .question::before {
+    content: counter(qa-counter) ".";
+}
+
+#qaAccordion div.accordion-item:nth-child(1) ol {
+    list-style-type: none;
+    counter-reset: list-counter;
+    padding-left: 0;
+}
+
+#qaAccordion div.accordion-item:nth-child(1) ol li {
+    counter-increment: list-counter;
+    position: relative;
+    padding-left: 32px;
+}
+
+#qaAccordion div.accordion-item:nth-child(1) ol li::before {
+    content: "(" counter(list-counter) ")";
+    position: absolute;
+    left: 0;
+}
