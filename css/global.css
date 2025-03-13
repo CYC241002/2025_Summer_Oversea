@@ -170,6 +170,14 @@ header.header {
     padding-left: 0.5em;
 }
 
+.photolist .img-fluid {
+    transition: .1s;
+}
+
+.photolist .img-fluid:hover {
+    transform: scale(1.02);
+}
+
 .row {
     margin-left: 0;
 }
@@ -179,13 +187,13 @@ header.header {
     background-color: RGBA(var(--bs-third-rgb),var(--bs-bg-opacity,1))!important;
 }
 
-.daily-content .card {
+/* .daily-content .card {
     transition: .1s;
 }
 
 .daily-content .card:hover {
     transform: scale(1.02);
-}
+} */
 
 .daily-row .img-fluid {
     transition: .1s;
@@ -336,10 +344,31 @@ section.area {
     }
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     .daily.daily-row:nth-child(odd) {
         flex-direction: row-reverse;
     }
+} */
+
+/* 每日行程 */
+.daily-schedule {
+    counter-reset: schedule-counter;
+}
+
+.daily-schedule .daily-row .day-count {
+    counter-increment: schedule-counter;
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 0.25em;
+    margin-bottom: 1em;
+}
+
+.daily-schedule .daily-row .day-count .day-count-number::before {
+    content: "Day "counter(schedule-counter);
+}
+
+.daily-schedule .daily-row .day-count .day-count-no-number {
+    text-align: left;
 }
 
 a[name] {
