@@ -334,19 +334,13 @@ section.area {
     height: auto;
 }
 
-@media (max-width: 767.99px) {
+/* @media (max-width: 767.99px) {
     .daily-content {
         margin-top: 1em;
     }
 
     .daily.daily-row .col-md-6:nth-child(even) {
         margin-top: 2em;
-    }
-}
-
-/* @media (min-width: 768px) {
-    .daily.daily-row:nth-child(odd) {
-        flex-direction: row-reverse;
     }
 } */
 
@@ -414,4 +408,10 @@ div.content article > a[name] {
     content: "(" counter(list-counter) ")";
     position: absolute;
     left: 0;
+}
+
+@media (min-width: 768px) {
+    .visa-info .visa-row:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
 }
