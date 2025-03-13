@@ -160,8 +160,8 @@ header.header {
     font-size: 1.2em;
     font-weight: bold;
     margin: 0;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
 }
 
 .feature p::before {
@@ -340,4 +340,17 @@ section.area {
     .daily.daily-row:nth-child(odd) {
         flex-direction: row-reverse;
     }
+}
+
+a[name] {
+    display: block;
+    position: relative;
+}
+
+section.area > a[name] {
+    top:-58px;
+}
+
+div.content article > a[name] {
+    top: -120px;
 }
