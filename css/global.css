@@ -369,6 +369,7 @@ section.area {
     padding: 0.25em;
     margin-bottom: 1em;
     text-align: center;
+    align-self: center;
 }
 
 .daily-schedule .daily-row .day-count .day-count-number, 
