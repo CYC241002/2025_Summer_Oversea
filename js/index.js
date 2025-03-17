@@ -11,6 +11,12 @@
             })
         }
 
+        const overlay = document.querySelector('.loading-overlay')
+        overlay.style.opacity = 0
+        setTimeout(() => {
+            overlay.style.display = 'none'
+        }, 1000);
+
         setTimeout(() => {
             if (window.location.hash) {
                 const target = document.querySelector(`a[name='${window.location.hash.replace('#','')}']`)

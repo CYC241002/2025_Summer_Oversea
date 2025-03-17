@@ -45,17 +45,139 @@ body {
     min-height: 100vh;
 }
 
+.loading-overlay {
+    z-index: 9999;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #fff;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}
+
+.loading-overlay .loader {
+    position: relative;
+    margin: 0 auto;
+    width: 100px;
+}
+
+.loading-overlay .loader::before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
+
+.loading-overlay .loader .circular {
+    animation: rotate 2s linear infinite;
+    height: 100%;
+    transform-origin: center center;
+    width: 100%;
+}
+
+.path {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+    animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+    stroke-linecap: round;
+}
+  
+@keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+}
+  
+@keyframes dash {
+    0% {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -35px;
+    }
+    100% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -124px;
+    }
+}
+  
+@keyframes color {
+    100%,
+    0% {
+        stroke: #23469c;
+    }
+    40% {
+        stroke: #78bc27;
+    }
+    66% {
+        stroke: #ce261a;
+    }
+    80%,
+    90% {
+        stroke: #000;
+    }
+  }
+
 .nav-item > .nav-link:hover, .dropdown-item:hover {
     color: #fff;
     background-color: RGBA(var(--bs-secondary-rgb),var(--bs-bg-opacity,1))!important;
 }
 
 header.header {
-    width: 100%;
-    height: 100vh;
+    /* width: 100%; */
+    min-height: 96vh;
+    margin-top: 3.75em;
 }
 
-#headerCarousel {
+header.header.row {
+    flex-grow: 1;
+}
+
+.camp-header {
+    background-size: cover;
+    background-position: center;
+    min-height: 24vh;
+    padding: 0;
+}
+
+.camp-header h1 {
+    font-weight: bold;
+    font-size: 1.5em;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.camp-header h1 a {
+    text-decoration: none;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.camp-header h1 a span {
+    transition: .3s;
+}
+
+.camp-header h1 a span:hover {
+    transform: scale(1.25);
+}
+
+/* #headerCarousel {
     height: 100%;
     display: flex;
     align-items: center;
@@ -96,7 +218,7 @@ header.header {
 
 #headerCarousel .carousel-indicators {
     bottom: 2rem;
-}
+} */
 
 .hero-section {
     height: 100%;
@@ -105,7 +227,9 @@ header.header {
 }
 
 .hero-section img {
+    width: 100%;
     height: 100vh;
+    object-fit: cover;
     filter: brightness(60%) contrast(95%);
 }
 
@@ -193,6 +317,7 @@ header.header {
 
 .row {
     margin-left: 0;
+    margin-right: 0;
 }
 
 .daily-header > div {
