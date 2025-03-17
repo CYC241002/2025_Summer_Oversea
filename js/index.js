@@ -20,8 +20,6 @@
         setTimeout(() => {
             if (window.location.hash) {
                 const target = document.querySelector(`a[name='${window.location.hash.replace('#','')}']`)
-                console.log(`a[name='${window.location.hash.replace('#','')}']`)
-                console.log(target)
                 if (target) {
                     target.scrollIntoView({behavior: 'smooth'})
                 }
