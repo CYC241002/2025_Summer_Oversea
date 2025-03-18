@@ -273,90 +273,6 @@ header.header .slogan-2 {
     }
 }
 
-/* header.header.row {
-    flex-grow: 1;
-}
-
-.camp-header {
-    background-size: cover;
-    background-position: center;
-    min-height: 24vh;
-    padding: 0;
-}
-
-.camp-header h1 {
-    font-weight: bold;
-    font-size: 1.5em;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-}
-
-.camp-header h1 a {
-    text-decoration: none;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.camp-header h1 a span {
-    transition: .3s;
-}
-
-.camp-header h1 a span:hover {
-    transform: scale(1.25);
-} */
-
-/* #headerCarousel {
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-#headerCarousel .carousel-inner {
-    height: 100%;
-}
-
-#headerCarousel .carousel-item {
-    height: 100%;
-}
-
-#headerCarousel .carousel-indicators button {
-    background-color: #fff;
-}
-
-#headerCarousel .carousel-control-prev-icon,
-#headerCarousel .carousel-control-next-icon {
-    filter: none;
-}
-
-#headerCarousel img, .hero-section img {
-    width: 100%;
-    height: 100%;
-    min-height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
-#headerCarousel .carousel-caption {
-    color: #fff;
-    background-color: rgba(10, 37, 64, 0.5);
-    bottom: 20%;
-    max-width: 90%;
-    border-radius: 15px;
-}
-
-#headerCarousel .carousel-indicators {
-    bottom: 2rem;
-} */
-
 .hero-section {
     height: 100%;
     min-height: 400px;
@@ -533,26 +449,6 @@ section.area {
     background-image: url('../img/08-Japan_Okinawa/08-Japan_Okinawa_Background.jpg');
 }
 
-/*
-.tc-feature .card {
-    height: 25em;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
-}
-
-.tc-feature .card .card-img-top {
-    height: 10em;
-}
-
-.tc-feature .card .card-img-top ion-icon {
-    width: 2.5em;
-    height: 2.5em;
-}
-
-.about {
-    background: linear-gradient(180deg, var(--bs-body-bg) 0%, var(--bs-body-bg) 60%,var(--bs-light) 100%);
-}
-*/
-
 
 .daily.daily-row {
     padding-top: 2em;
@@ -683,6 +579,35 @@ section.area {
 
 .daily-schedule h2 {
     font-size: 1.5em;
+}
+
+/* 航班資訊 */
+.daily-schedule .flight .flight-row .spend-time::before,
+.daily-schedule .flight .flight-row .spend-time::after {
+    content: ' ';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #666;
+    border-radius: 50%;
+    bottom: -5px;
+}
+
+.daily-schedule .flight .flight-row .spend-time::before {
+    left: 0;
+    transform: translateX(-50%);
+}
+
+.daily-schedule .flight .flight-row .spend-time::after {
+    right: 0;
+    transform: translateX(50%);
+}
+
+.daily-schedule .flight .flight-row .spend-time {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    border-bottom: 1px solid #666;
 }
 
 a[name] {
