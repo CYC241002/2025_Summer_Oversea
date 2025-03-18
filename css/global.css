@@ -610,6 +610,17 @@ section.area {
     border-bottom: 1px solid #666;
 }
 
+.daily-schedule .flight ul.post-script {
+    list-style-type: none;
+    padding-top: 1em;
+    padding-left: 20px;
+}
+
+.daily-schedule .flight ul.post-script li::before {
+    content: '※';
+    margin-right: 10px;
+}
+
 a[name] {
     display: block;
     position: relative;
