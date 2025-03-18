@@ -230,6 +230,11 @@ header.header .slogan-2 {
         text-shadow: 5px 5px 5px #000;
     }
 
+    header.header .slogan.start {
+        opacity: 0;
+        transform: translate(-92.5%, -100%);
+    }
+
     header.header .slogan-1 {
         top: 0;
         font-size: 5em;
