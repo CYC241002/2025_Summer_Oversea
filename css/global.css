@@ -2,6 +2,7 @@
     --bs-body-bg: #d0e1f1;
     --bs-primary-bg: #1c449b;
     --bs-primary-rgb: 28, 68, 155;
+    --bs-primary-rgba-half-transparent: 28, 68, 155, 0.5;
     --bs-secondary-bg: #5776b7;
     --bs-secondary-rgb: 87, 118, 183;
     --bs-third-bg: #2555a7;
@@ -378,11 +379,15 @@ header.header .slogan-2 {
     z-index: 100;
 }
 
+.hero-section .description .inner h1 {
+    text-shadow: 0.1em 0.1em 0.2em #000;
+}
+
 .hero-section .description .inner .sub {
     width: 80%;
     max-width: 25em;
     margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(var(--bs-primary-rgba-half-transparent));
 }
 
 .hero-section .description .inner .sub .detail-text {
