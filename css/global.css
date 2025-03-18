@@ -296,7 +296,7 @@ header.header .slogan-2 {
     color: #000;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1400px) {
     .nav-card .card {
         height: 23.5em;
     }
@@ -329,7 +329,7 @@ header.header .slogan-2 {
 }
 
 .hero-section .description .inner .sub {
-    width: 80%;
+    width: 90%;
     max-width: 25em;
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.5);
