@@ -387,7 +387,7 @@ header.header .slogan-2 {
     width: 80%;
     max-width: 25em;
     margin: 0 auto;
-    background-color: rgba(var(--bs-primary-rgba-half-transparent));
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .hero-section .description .inner .sub .detail-text {
