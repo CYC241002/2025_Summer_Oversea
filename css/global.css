@@ -218,7 +218,7 @@ header.header .slogan-2 {
     font-size: 1.25em;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1400px) {
     header.header .back img {
         object-position: center 57.5%;
         height: 96vh;
