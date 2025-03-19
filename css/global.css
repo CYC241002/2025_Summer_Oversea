@@ -31,6 +31,10 @@
     --tc-feature-wish-bg: #450640;
 }
 
+.text-justify {
+    text-align: justify;
+}
+
 .material-symbols-outlined {
     font-variation-settings:
       'FILL' 0,
@@ -608,6 +612,10 @@ section.area {
 
 .daily-schedule h2 {
     font-size: 1.5em;
+}
+
+.daily-schedule h3 {
+    font-size: 1.25em;
 }
 
 /* 航班資訊 */
