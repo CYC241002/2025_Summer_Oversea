@@ -677,8 +677,61 @@ div.content article > a[name] {
     top: -120px;
 }
 
-@media (min-width: 768px) {
-    .visa-info .visa-row:nth-child(odd) {
-        flex-direction: row-reverse;
-    }
+/* Icons */
+.icon {
+    width: 32px;
+    height: 32px;
+    background-image: url('../img/icon_sprites.png');
+}
+
+.icon-airfare { /* 機票 */
+    background-position: -10px -10px;
+}
+
+.icon-traffic { /* 交通 */
+    background-position: -62px -10px;
+}
+
+.icon-lodging { /* 住宿 */
+    background-position: -10px -62px;
+}
+
+.icon-visit { /* 參訪 */
+    background-position: -62px -62px;
+}
+
+.icon-ticket { /* 門票 */
+    background-position: -114px -10px;
+}
+
+.icon-catering { /* 部分餐食 */
+    background-position: -114px -62px;
+}
+
+.icon-insurance { /* 保險 */
+    background-position: -10px -114px;
+}
+
+.icon-tip { /* 小費 */
+    background-position: -62px -114px;
+}
+
+.icon-visa_fee { /* 簽證費用 */
+    background-position: -114px -114px;
+}
+
+.icon-consume { /* 個人消費 */
+    background-position: -166px -10px;
+}
+
+.icon-self_catering { /* 自理餐食 */
+    background-position: -166px -62px;
+}
+
+.icon-personal_travel_insurance { /* 個人旅遊平安險 */
+    background-position: -166px -114px; 
+}
+
+.icon-hotel_tip { /* 飯店行李小費 */
+    background-position: -10px -166px;
 }
