@@ -328,6 +328,12 @@ header.header .slogan-2 {
     z-index: 100;
 }
 
+.hero-section .description .inner .number {
+    font-weight: bold;
+    margin-bottom: 0.25em;
+    text-shadow: 0.1em 0.1em 0.2em #000;
+}
+
 .hero-section .description .inner h1 {
     text-shadow: 0.1em 0.1em 0.2em #000;
 }
