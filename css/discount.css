@@ -23,7 +23,7 @@ ol {
 ol li {
     counter-increment: list-counter;
     padding-left: 2em;
-    text-indent: -1.8em;
+    text-indent: -1.75em;
 }
 
 ol li::before {
@@ -41,18 +41,20 @@ ol li::before {
 }
 
 #register .register-step .icon .material-symbols-outlined {
-    font-size: 4em;
+    font-size: 2em;
 }
 
 #register .register-step .guidance {
     position: relative;
+    word-break: break-all;
+    word-break: break-word;
 }
 
 #register .register-step .guidance::before {
     content: '';
     position: absolute;
     left: -2em;
-    top: 2.5em;
+    top: 1.5em;
     width: 2em;
     height: 3px;
     background-color: var(--bs-primary);
@@ -67,4 +69,21 @@ ol li::before {
 
 #register .register-step:last-child h3::before {
     display: none;
+}
+
+#register .register-step .guidance h3 {
+    padding-top: 0.25em;
+    font-size: 1.2em;
+}
+
+@media (min-width: 768px) {
+    #register .register-step .guidance h3 {
+        padding-top: 0.5em;
+        font-size: 1em;
+    }
+
+    #register .register-step .guidance p, 
+    #register .register-step .guidance li {
+        font-size: 0.8em;
+    }
 }
