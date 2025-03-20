@@ -407,12 +407,17 @@ header.header .slogan-2 {
     margin: 0;
     padding-top: 0.1em;
     padding-bottom: 0.1em;
+    display: flex;
+    align-items: flex-start;
 }
 
 .feature p::before {
     content: '★';
-    padding-right: 0.5em;
-    padding-left: 0.5em;
+    flex-shrink: 0;
+    width: 1.5em;
+    text-align: center;
+    padding-right: 0.25em;
+    padding-left: 0.25em;
 }
 
 .photolist .img-fluid {
