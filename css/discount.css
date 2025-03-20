@@ -30,3 +30,39 @@ ol li::before {
 }
 
 /* 報名程序 */
+#register {
+    counter-reset: step-counter;
+}
+
+#register .register-step {
+    position: relative;
+}
+
+#register .register-step .icon .material-symbols-outlined {
+    font-size: 4em;
+}
+
+#register .register-step .guidance {
+    position: relative;
+}
+
+#register .register-step .guidance::before {
+    content: '';
+    position: absolute;
+    left: -2em;
+    top: 2.5em;
+    width: 2em;
+    height: 3px;
+    background-color: var(--bs-primary);
+    z-index: -1;
+}
+
+#register .register-step .guidance h3::before {
+    counter-increment: step-counter;
+    content: "步驟 "counter(step-counter);
+    padding-right: 1em;
+}
+
+#register .register-step:last-child h3::before {
+    display: none;
+}

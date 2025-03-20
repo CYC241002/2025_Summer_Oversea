@@ -280,8 +280,11 @@ header.header .slogan-2 {
     }
 }
 
+.nav-card .card .card-text .info {
+    font-size: 0.9em;
+}
 
-.nav-card .card .card-text .spot::before {
+.nav-card .card .card-text .info .spot::before {
     content: ' | ';
     padding-left: 0.1em;
     padding-right: 0.1em;
@@ -673,7 +676,7 @@ div.content article > a[name] {
 }
 
 /* Icons */
-.icon {
+section.area .icon {
     width: 32px;
     height: 32px;
     background-image: url('../img/icon_sprites.png');
