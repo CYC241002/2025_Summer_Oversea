@@ -502,16 +502,6 @@ section.area {
     margin-top: 72px;
 }
 
-.accordion-button {
-    /*background-color: var(--bs-primary-bg);
-    color: #fff;*/
-    border: 2px solid var(--bs-primary-bg);
-}
-
-.accordion-body {
-    border: 1px solid var(--bs-primary-bg);
-}
-
 .float-icons .float-icon {
     position: fixed;
     bottom: 20px;
