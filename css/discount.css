@@ -1,0 +1,32 @@
+/* 報名優惠 */
+#first-discount li {
+    font-size: 1.5em;
+}
+
+/* 報名贈品 */
+#gift ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#gift ul li::before {
+    content: '★';
+    padding-right: 0.5em;
+}
+
+ol {
+    list-style-type: none;
+    counter-reset: list-counter;
+    padding-left: 0;
+}
+
+ol li {
+    counter-increment: list-counter;
+}
+
+ol li::before {
+    content: "(" counter(list-counter) ")";
+    padding-right: 0.5em;
+}
+
+/* 報名程序 */
